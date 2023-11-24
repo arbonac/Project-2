@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title id="dynamicTitle">i-spring</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        #searchBar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        #gifContainer {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .gif {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="searchBar">
+        <h1 id="searchTitle"></h1>
+        <input type="text" placeholder="Search...">
+    </div>
+    
+    <div id="gifContainer">
+        <img class="gif" src="https://media.giphy.com/media/n5CHDD8c4sW18Dqz3z/giphy.gif" width="460" height="480">
+        <img class="gif" src="https://media.giphy.com/media/RhrAmVUHxjTQvEPBWi/giphy.gif" width="460" height="480">
+        <img class="gif" src="https://media.giphy.com/media/fZlP5WCnQXo2s/giphy.gif" width="460" height="480">
+    </div>
+
+    <script>
+        // Update the title dynamically
+        const dynamicTitle = document.getElementById('dynamicTitle');
+        dynamicTitle.innerHTML += ' - i-spring';
+
+        // Update the search title
+        const searchTitle = document.getElementById('searchTitle');
+        searchTitle.innerHTML = 'Search: ';
+    </script>
+</body>
+</html>
